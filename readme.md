@@ -2,7 +2,7 @@
 
 Code and dataset for lrec-coling 2024 paper: "Continual Few-shot Event Detection via Hierarchical Augmentation Networks"
 
-The preprint version is now available in [arxiv](https://arxiv.org/abs/2403.17733)!
+The preprint version is now available on [arxiv](https://arxiv.org/abs/2403.17733)!
 
 ## Requirements
 
@@ -20,7 +20,7 @@ By the following codes, you can run the default setting of HANet on the CFED-MAV
 bash MAVEN_all_fwUCL+TCL.sh
 ```
 
-Detailed configurations can be seen in *configs.py*
+Detailed configurations can be seen in [configs.py](./configs.py)
 
 ## Citation
 
