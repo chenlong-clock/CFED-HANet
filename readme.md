@@ -6,7 +6,7 @@ The preprint version is now available on [arxiv](https://arxiv.org/abs/2403.1773
 
 ## Requirements
 
-Dependencies can be installed through running:
+Dependencies can be installed by running:
 
 ```bash
 pip install -r requirements.txt
