@@ -2,7 +2,7 @@
 
 Code and dataset for lrec-coling 2024 paper: "Continual Few-shot Event Detection via Hierarchical Augmentation Networks"
 
-The preprint version is now available on [arxiv](https://arxiv.org/abs/2403.17733)!
+The camera-ready version is now available on [Arxiv](https://arxiv.org/abs/2403.17733)!
 
 ## Requirements
 
