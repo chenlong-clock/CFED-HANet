@@ -11,7 +11,7 @@ do
                 do
                     for n in ACE MAVEN
                     do
-                        python train_now2.py \
+                        python train.py \
                             --data-root ./data_incremental \
                             --dataset $n \
                             --backbone bert-base-uncased \
