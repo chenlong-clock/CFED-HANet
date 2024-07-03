@@ -92,7 +92,7 @@ def collect_dataset(dataset, root, split, label2idx, stage_id, labels):
         data_spans.append(valid_span)
             # data_spans.append(valid_span)
     if args.my_test:
-        return MAVEN_Dataset(data_tokens[:100], data_labels[:100], data_masks[:100], data_spans[:100]) # TODO:test use
+        return MAVEN_Dataset(data_tokens[:100], data_labels[:100], data_masks[:100], data_spans[:100]) # TODO: deprecated, used for debugging, not for test!
     else:
         return MAVEN_Dataset(data_tokens, data_labels, data_masks, data_spans)
 
