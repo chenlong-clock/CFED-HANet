@@ -12,7 +12,7 @@ Dependencies can be installed by running the following code:
 pip install -r requirements.txt
 ```
 
-## Quick Start
+## Quick Start for implementation
 
 By the following codes, you can run the default setting of HANet on the CFED-MAVEN dataset:
 
@@ -21,6 +21,20 @@ bash MAVEN_all_fwUCL+TCL.sh
 ```
 
 Detailed configurations can be seen in [configs.py](./configs.py)
+
+## Hyperparameters used in the experiments
+
+Some hyperparameters used in the experiments are not fully stated in the `MAVEN_all_fwUCL+TCL.sh`. We show these parameters as follows: 
+
+### Random Seed 
+We randomly evaluated each method with random seed ``1, 2, 3, 4, 42''
+
+### Dataset Permutation
+The permutation used in the dataset can be found in [data_incremental/{dataset}/perm{i}](./data_incremental/MAVEN)
+
+### Other parameters:
+
+The `--aug-repeat-times` is `5` and the `--joint-da-loss` is 'none'.
 
 ## Citation
 
