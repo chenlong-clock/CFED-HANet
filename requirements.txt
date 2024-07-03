@@ -2,6 +2,7 @@ matplotlib==3.3.4
 numpy==1.20.1
 scikit_learn==0.24.1
 torch==2.2.1
-tqdm==4.65.0
 tqdm==4.59.0
 transformers==4.33.1
+
+# Different CUDA versions may influence the final results, our experiments are performed on CUDA 11.6.
