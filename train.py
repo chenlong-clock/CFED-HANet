@@ -20,9 +20,9 @@ from torch.utils.data.distributed import DistributedSampler
 
 
 
-PERM_5 = [[0, 1, 2, 3, 4], [4, 3, 2, 1, 0], [0, 3, 1, 4, 2], [1, 2, 0, 3, 4], [3, 4, 0, 1, 2]]
+# PERM_5 = [[0, 1, 2, 3, 4], [4, 3, 2, 1, 0], [0, 3, 1, 4, 2], [1, 2, 0, 3, 4], [3, 4, 0, 1, 2]]
 
-PERM_10 = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
+# PERM_10 = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
 
 
 
@@ -55,9 +55,9 @@ def train(local_rank, args):
     # set device, whether to use cuda or cpu
     device = torch.device(args.device if torch.cuda.is_available() and args.device != 'cpu' else "cpu")  # type: ignore
     # get streams from json file and permute them in pre-defined order
-    PERM = PERM_5 if args.task_num == 5 else PERM_10
+    # PERM = PERM_5 if args.task_num == 5 else PERM_10
     streams = collect_from_json(args.dataset, args.stream_root, 'stream')
-    streams = [streams[l] for l in PERM[int(args.perm_id)]] # permute the stream
+    # streams = [streams[l] for l in PERM[int(args.perm_id)]] # permute the stream
     label2idx = {0:0}
     for st in streams:
         for lb in st:
